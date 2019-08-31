@@ -7,23 +7,24 @@ import PageObjects.Login;
 import Utility.Constants;
 import Utility.Keywords;
 import Utility.ReadConfig;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class TC_Login {
 
-	static {
-		DOMConfigurator.configure("log4j.xml");
-		Log.startTestCase("TC_Login");
-		Keywords.openBrowser("chrome");
-		Log.info("Opened Chrome");
-		Keywords.openURL("https://www.flipkart.com");
-		Log.info("Hit flipkart.com");
-	}
+//	static {
+//		DOMConfigurator.configure("log4j.xml");
+//		Log.startTestCase("TC_Login");
+//		Keywords.openBrowser("chrome");
+//		Log.info("Opened Chrome");
+//		Keywords.openURL("https://www.flipkart.com");
+//		Log.info("Hit flipkart.com");
+//	}
 
 	Login l = new Login(Constants.driver);
-	ReadConfig rc = new ReadConfig("/home/sb/eclipse-workspace/OnFK/src/Configuration/config.properties");
+	ReadConfig rc = new ReadConfig("./src/Configuration/config.properties");
 
 	@Given("^user enters weburl$")
 	public void user_enters_weburl() throws Throwable {

@@ -44,11 +44,13 @@ public class MyProfile {
 	}
 
 	public void setFirstName(String fname) {
+		firstName.clear();
 		firstName.sendKeys(fname);
 		Log.info("First name text box found");
 	}
 
 	public void setLastName(String lname) {
+		lastName.clear();
 		lastName.sendKeys(lname);
 		Log.info("Last name text box found");
 	}

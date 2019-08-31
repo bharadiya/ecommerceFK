@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/Features/Login.Feature", glue = { "TestCases" }, tags = { "~@Multiplelogin" })
+@CucumberOptions(features = "src/Features/Login.Feature", glue = { "TestCases" }, tags = { "@Login" })
 public class TestRunner {
 
 }
